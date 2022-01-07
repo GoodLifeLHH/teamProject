@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+html, body {margin:0; padding:0; font-family:"Dotum","돋움",arial,sans-serif; font-size: 12px; color:#000; height: 100%;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,p,th,td {margin:0; padding:0;}
+input,td,th {font-size: 12px;}
+table { border-spacing: 0; border-collapse: collapse;}
+ol,ul ,li { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-size: 100%; }
+hr{position:absolute;top:0;left:-9999px;visibility:hidden;overflow:hidden;line-height: 0;margin:0;padding:0;}
+img{border:0 none;}
+/*label{cursor:pointer;}*/
+em {font-style:normal;}
+
+.col2 {color:#cc6666 !important;}
+
+div {
+	font-family: "돋움", "굴림",  "Verdana", "Arial";
+	font-size: 12px;
+	color: #636363;
+}
+
+.select-title {
+		border-top:1px solid #ddd;
+    background-color: #444444;
+    color: #dddddd;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+		width: 100%;
+}
+
+.container{
+	overflow: hidden;
+	width: 1080px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	transform: trnslate(-50%, -50%);
+}
+
+.inner_left{
+	margin: 10px;
+	float: left;
+	width: 650px;
+}
+
+.inner_right{
+	float: right;
+	width: 400px;
+	height: 630px;
+	border: 2px solid #ddd;
+}
+
+.inner_right .list2 {
+  width: 100%;
+  color: #666;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.inner_right .list2 th {
+  padding: 4px 0 1px 0;
+  padding: 5px 0 1px 0;
+  background: #e5e5e5;
+  border-right: 1px solid #d0d0d0;
+}
+
+.inner_right .list2 .brN {
+  border-right: 0;
+}
+
+.inner_right .list2 td {
+  padding: 2px 0 1px 0;
+  padding: 3px 0 1px 0;
+  font-size: 11px;
+  text-align: center;
+  border-top: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+}
+
+.inner_right .list2 .taR {
+  text-align: center;
+  font-weight: bold;
+  color: #c33;
+  border-right: 0;
+}
+
+.inner_right .exp {
+  padding: 6px 0 0 19px;
+  color: #c66;
+  line-height: 16px;
+  font-size: 11px;
+  letter-spacing: -1px;
+  background: url("//ticketimage.globalinterpark.com/ticketimage/TicketImage/onestop/bul_02.gif") 9px 13px no-repeat;
+}
+
+.pay_info{	
+	margin: 5px;
+	padding: 10px;
+}
+
+.show_info{
+	margin: 15px;
+	height: 120px;
+	width: 360px;
+  padding-left: 15px;
+}
+
+
+.show_info .image{
+	float: left;
+	margin: 10px;
+	width: 102px;
+}
+
+.show_info .exp {
+  width: 150px;
+  float: left;
+}
+
+.show_info .exp em {
+  height: 32px;
+  padding-top: 4px;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.show_info .exp li {
+	margin-top: 4px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #666;
+}
+
+.show_info li {
+  padding-left: 7px;
+  color: #636363;
+  line-height: 17px;
+  background: url("//ticketimage.globalinterpark.com/ticketimage/TicketImage/onestop/bul_01.gif") 0 5px no-repeat;
+}
+
+.buy_info{
+	width: 380px;
+	padding: 10px;
+  padding-left: 14px;
+  display: inline-block;
+}
+
+.buy_info .title {
+  height: 19px;
+  border-bottom: 2px solid #3a3a3a;
+}
+
+.buy_info table {
+  width: 100%;
+  background: #fff;
+}
+
+.buy_info table th {
+  padding: 4px 0 3px 4px;
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: -1px;
+  line-height: 15px;
+  background: #f1eeec;
+  color: #666;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.buy_info table td {
+  padding: 4px 0 3px 4px;
+  text-align: left;
+  color: #000;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.buy_info table .seat {
+  padding: 1px 0 2px 8px;
+}
+
+.buy_info table .fir th {
+  padding: 8px 0 5px 10px;
+}
+
+.buy_info table .fir td {
+  padding: 2px 0 2px 8px;
+}
+
+.buy_info table .line1 th,
+.buy_info table .line1 td {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.buy_info table .line2 th,
+.buy_info table .line2 td {
+  border-bottom: 1px solid #2b2a2a;
+}
+
+.buy_info table .total th {
+  height: 41px;
+  padding: 0 0 0 6px;
+  color: #fff;
+  background: #83807f;
+  border-bottom: 2px solid #2b2a2a;
+  line-height: 41px;
+}
+
+.buy_info table .total td {
+  text-align: right;
+  padding: 0 15px 0 0;
+  background: #979493;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #2b2a2a;
+}
+
+.buy_info table .total td strong {
+  font-family: "Verdana", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #fc3;
+}
+
+.buy_info table .txt1 {
+  font-size: 11px;
+  color: #c66;
+}
+
+.buy_info table .seat .scrollY {
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.buy_info table .seat ul {
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.buy_info table .seat li {
+  line-height: 15px;
+  color: #000;
+}
+
+.buy_info .btn {
+  margin-top: 5px;
+  font-size: 0;
+  width: 231px;
+  text-align: center;
+  float: right;
+}
