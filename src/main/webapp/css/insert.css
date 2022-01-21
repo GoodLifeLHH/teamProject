@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+#main > #insert_header {
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(to left, rgba(0,0,0,0.5), 40%, rgb(0,0,0,0.5)),
+				url(../img/pen.jpg) no-repeat center / cover;
+}
+
+#main > #insert_header > p {
+	font-size: 22pt;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 300px;
+}
+#main #insert{
+	height:auto;
+}
+
+#seatPrice{
+	float:right;
+	padding:20px;
+}
+
+#insert{
+	width:800px;
+	height:600px;
+	margin:100px auto;
+}
+
+#frm_insert{
+	border:1px solid #000;
+	padding:20px;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+
+#btnZone{
+	margin:10px auto;
+	width:330px;
+}
+input[type="button"] {
+	width: 130px;
+	height: 30px;
+	background-color: #ed1839;
+	color: #fff;
+	border: 0px solid;
+	font-size: 12pt;
+	margin:10px 15px;
+}
+#runningTime{
+	margin-left:-5px;
+}
+input[type="number"]{
+	margin-left:3px;
+}
+label{
+	display:inline-block;
+	width:110px;
+	margin-bottom:10px;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+	z-index:100; /*안보여서 넣음*/
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border-top: 2px solid #07d;
+  border-right: 2px solid transparent;
+  animation: spinner .6s linear infinite;
+}

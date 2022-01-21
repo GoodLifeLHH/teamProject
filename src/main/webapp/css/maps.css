@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+body {
+	list-style: none;
+	background-color: #41414c;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* header */
+header {
+	z-index: 1;
+	width: 100%;
+	height: 110px;
+	background-color: #41414c;
+	padding-top: 20px;
+	box-sizing: border-box;
+	position: fixed;
+}
+header > #logo {
+	width: 203px;
+	height: 64px;
+	background: url(../img/logo.png);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header > nav {
+	width: 31px;
+	height: 32px;
+	background: url(../img/menu-btn.gif);
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(0, -50%); /* 앞이 x 뒤가 y */
+}
+
+header > .search_btn {
+	float: right;
+	margin-right: 100px;
+}
+
+header > #search_bar {
+	display: none;
+	z-index: 9;
+	padding-top: 20px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #41414c;
+	box-shadow: 0px 10px 20px #0005;
+}
+header > #search_bar > form > .close_btn {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+header > #search_bar input[type="search"] {
+	width: 600px;
+	height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+header > #search_bar > form > .search_btn {
+	position: absolute;
+	top: 50px;
+	right: 20%;
+	transform: translate(-50%, -50%);
+}
+header > #login,
+header > #join {
+	display: block;
+	color: #fff;
+	width: 80px;
+	height: 26px;
+	border: 1px solid #fff5;
+	border-radius: 13px;
+	text-align: center;
+	line-height: 26px;
+	float: right;
+	text-decoration: none;
+}
+header > #login {
+	margin-right: 20px;
+}
+header > #join {
+	margin-right: 30px;
+	background-color: #808091;
+}
+
+header > #menu_bar {
+	display: none;
+	z-index: 9;
+	padding-top: 20px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #41414c;
+	box-shadow: 0px 10px 20px #0005;
+}
+header > #menu_bar > img {
+	display: block;
+	margin-left: 170px;
+	margin-bottom: 50px;
+}
+header > #menu_bar > div {
+	width: 170px;
+	padding: 10px;
+	color: #fff;
+	text-align: right;
+}
+
+/* section */
+section {
+	height: auto;
+    overflow: hidden;
+}
+
+/* footer */
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+}
+
+/*여기서부터 maps Tab css*/
+#map{
+	margin:10px auto;
+	
+}
+.maps_addressTitle{
+	color:white; 
+	font-size:30px;
+	text-align: center;
+	
+}
+.maps_address{
+	color:white;
+	
+}
+
+.maps_notice{
+	color:red; 
+	font-size:30px;
+	text-align: center;
+	
+}
+
+.maps main {
+  display: flex;
+  flex-direction: column;
+
+}
+.tabs {
+  display: flex;
+ 
+}
+.tabs .tab {
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  width: 5000px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+}
+.maps content {
+  width: 100%;
+  height: 800px;
+  border: 2px solid black;
+ 
+}
+.items.active {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  font-size: 20px;
+}
+.items {
+  display: none;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  font-size: 20px;
+}

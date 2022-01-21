@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.team.mybatis.ProjectMapper">
+
+	<select id="getCustomerName" parameterType="String" resultType="com.team.project.ProjectVo">
+		select customerName, pwd from customer where mid = #{_parameter}
+	</select>
+
+	<select id='totSize' parameterType ='String' resultType='Integer'>
+		select count(serial) totSize from playInfo
+		where title like '%${_parameter}%' or doc like '%${_parameter}%' or detail like '%${_parameter}%' 
+	</select>
+	
+	<select id="search" parameterType="com.team.project.Page" resultType="com.team.project.ProjectVo">
+		select * from playInfo where title like '%${findStr}%' or date like '%${findStr}%' or detail like '%${findStr}%'
+		order by date desc limit ${startNo-1}, ${listSize}
+	</select>
+	
+	<insert id ='insertPlay' parameterType = "com.team.project.ProjectVo">
+	 insert into playInfo(serial, detail, title, date, running_time,
+			theater, entryAge, startTime, rPrice, sPrice, aPrice, seats, ask, main_img, detail_img)
+		values(getPlayInfoSerial('i'), #{detail}, #{title}, #{date}, ${running_time}, #{theater}, #{entryAge}, #{startTime},
+			${rPrice}, ${sPrice}, ${aPrice}, ${seats}, #{ask}, #{main_img}, #{detail_img} )
+	</insert>
+	
+	<insert id='insertPlayAtt' parameterType='com.team.project.ProjectAtt'>
+	 insert into playAtt(grp, attFile)
+	 				values(getPlayInfoSerial(''), #{attFile})
+	</insert>
+	
+	<select id="view" parameterType="String" resultType="com.team.project.ProjectVo">
+		select * from playInfo where serial = #{serial}
+	</select>
+	
+	<update id = "modify" parameterType="com.team.project.ProjectVo">
+		update playInfo set title = #{title}, main_img = #{main_img}, detail_img =#{detail_img}, date = #{date}, startTime = #{startTime},
+		rPrice = #{rPrice}, sPrice = #{sPrice}, aPrice = #{aPrice}, theater = #{theater}, seats = #{seats},
+		entryAge = #{entryAge}, running_time = #{running_time}, ask = #{ask}, doc = #{doc} where serial = #{serial}
+	</update>
+	
+	<delete id="delete" parameterType="com.team.project.ProjectVo">
+	 delete from playInfo where serial = #{serial}
+	</delete>
+</mapper>

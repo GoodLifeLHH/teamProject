@@ -1,0 +1,58 @@
+#resultMain > #result_header {
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(to left, rgba(0,0,0,0.5), 40%, rgb(0,0,0,0.5)),
+				url(../img/pen.jpg) no-repeat center / cover;
+}
+#resultMain > #result_header > p {
+	font-size: 22pt;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 200px;
+	width:100%;
+}
+#resultMain > #result {
+	width: 100%;
+	height: 600px;
+	background-color: #fff;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+#resultMain > #result > #result_box {
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+	border: 1px solid #41414c;
+}
+#result img {
+	display: block;
+	margin: 100px auto 30px;
+}
+.box {
+	margin: 0 auto;
+	width:350px;
+	text-align:center;
+}
+
+#resultMain > #result > #result_box output {
+	display:inline-block;
+	width:300px;
+	height:100px;
+	text-align:center;
+	line-height:100px;
+}
+
+#resultMain > #result > #result_box input[type="button"] {
+	width: 100px;
+	height: 30px;
+	background-color: #ed1839;
+	color: #fff;
+	border: 0px solid;
+	font-size: 12pt;
+	float: left;
+	margin: 10px 36%;
+}
+#resultMain > #result > #result_box input[type="button"]:hover{
+	cursor:pointer;
+}
